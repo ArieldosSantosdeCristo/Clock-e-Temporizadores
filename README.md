@@ -1,6 +1,8 @@
 # Clock-e-Temporizadores
 SEMAFORO
 
+README - Sistema de Semáforo com Raspberry Pi Pico
+
 Este projeto implementa um sistema simples de semáforo utilizando um Raspberry Pi Pico. Ele controla três LEDs representando as cores do semáforo (vermelho, amarelo e verde) alternando entre eles a cada 3 segundos.
 
 🛠️ Requisitos
@@ -34,3 +36,35 @@ Carregue o código no Raspberry Pi Pico.
 Conecte os LEDs conforme a configuração descrita.
 Execute o programa no Raspberry Pi Pico.
 Observe o funcionamento do semáforo alternando entre as cores.
+
+---------------------------------------------------------------------------------------------------------
+Temporizador
+
+Controle de LEDs com Botão no Raspberry Pi Pico
+Este projeto implementa um sistema de controle de LEDs utilizando um botão no Raspberry Pi Pico. Quando o botão é pressionado, os LEDs acendem em sequência com temporizadores que controlam o tempo de cada cor.
+
+🛠️ Componentes Necessários
+
+Raspberry Pi Pico
+3 LEDs (Azul, Vermelho e Verde)
+1 Botão Push
+Resistores adequados (220Ω - 330Ω)
+Fios de conexão
+Protoboard
+
+🔌 Conexões
+
+Componente	GPIO do Pico
+LED Azul	11
+LED Vermelho	12
+LED Verde	13
+Botão	5
+
+🚀 Funcionamento
+
+O sistema fica em espera até que o botão seja pressionado.
+Quando o botão é acionado, os LEDs acendem na seguinte sequência:
+Azul → 3 segundos → Desliga
+Vermelho → 3 segundos → Desliga
+Verde → 3 segundos → Desliga
+Após a sequência, o sistema volta a esperar uma nova ativação do botão.
