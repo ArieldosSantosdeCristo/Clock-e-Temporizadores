@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "author": "Ariel",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-pi-pico-w",
+      "id": "pico",
+      "top": -60.85,
+      "left": -236.45,
+      "attrs": { "builder": "pico-sdk" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 70,
+      "left": -500.00,
+      "rotate": 90,
+      "attrs": { "value": "330" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 72,
+      "left": -400.00,
+      "rotate": 90,
+      "attrs": { "value": "330" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 72,
+      "left": -300.00,
+      "rotate": 90,
+      "attrs": { "value": "330" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_red",
+      "top": -22.8,
+      "left": -500.00,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_yellow",
+      "top": -22.8,
+      "left": -400.00,
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_green",
+      "top": -22.8,
+      "left": -300.00,
+      "attrs": { "color": "green" }
+    }
+    
+  
+  ],
+  "connections": [
+    [ "pico:GP0", "$serialMonitor:RX", "", [] ],
+    [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+    [ "pico:GND.4", "r1:2", "black", [ "h0" ] ],
+    [ "pico:GND.4", "r2:2", "black", [ "h0" ] ],
+    [ "pico:GND.4", "r3:2", "black", [ "h0" ] ],
+    [ "pico:GP11", "led_red:A", "green", [ "h0" ] ],
+    [ "pico:GP12", "led_yellow:A", "green", [ "h0" ] ],
+    [ "pico:GP13", "led_green:A", "green", [ "h0" ] ],
+    [ "led_red:C", "r1:1", "green", [ "v0" ] ],
+    [ "led_yellow:C", "r2:1", "green", [ "v0" ] ],
+    [ "led_green:C", "r3:1", "green", [ "v0" ] ],
+    [ "cap_red:1", "led_red:A", "blue", [ "h0" ] ],
+    [ "cap_red:2", "pico:GND.4", "blue", [ "h0" ] ],
+    [ "cap_yellow:1", "led_yellow:A", "blue", [ "h0" ] ],
+    [ "cap_yellow:2", "pico:GND.4", "blue", [ "h0" ] ],
+    [ "cap_green:1", "led_green:A", "blue", [ "h0" ] ],
+    [ "cap_green:2", "pico:GND.4", "blue", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
