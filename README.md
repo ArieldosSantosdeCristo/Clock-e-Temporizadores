@@ -1,7 +1,7 @@
 # Clock-e-Temporizadores
 --------------------------------------------------------------------------------------------------------
 ATENÇÃO: Para que o projeto funcione corretamente, 
-é preciso baixar as pastas dentro do vscode e abrir cada pasta indivualmente 
+é preciso baixar as pastas, e dentro do vscode abrir cada pasta indivualmente 
 para importar o projeto pelo Raspberry Pi Pico Projeto.
 --------------------------------------------------------------------------------------------------------
 SEMAFORO
