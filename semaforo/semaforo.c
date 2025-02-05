@@ -45,10 +45,10 @@ int main() {
     struct repeating_timer timer;
     add_repeating_timer_ms(3000, repeating_timer_callback, NULL, &timer);
 
-    // Loop principal
+    // Loop principal 3 segundos
     while (true) {
         printf("Sistema de semáforo operando...\n");
-        sleep_ms(3000); // Aguarda 1 segundo
+        sleep_ms(3000); 
     }
 }
 
