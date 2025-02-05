@@ -1,4 +1,9 @@
 # Clock-e-Temporizadores
+--------------------------------------------------------------------------------------------------------
+ATENÇÃO: Para que o projeto funcione corretamente, 
+é preciso baixar as pastas, dentro do vscode abrir cada pasta indivualmente 
+e importar o projeto pelo Raspberry Pi Pico Projeto.
+--------------------------------------------------------------------------------------------------------
 SEMAFORO
 
 README - Sistema de Semáforo com Raspberry Pi Pico
